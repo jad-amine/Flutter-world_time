@@ -4,14 +4,14 @@ import 'package:http/http.dart';
 class WorldTime{
 
   String location; // location name for the ui
-  String time; // the time in that location
+  String? time; // the time in that location
   String flag; // url to an asset flag icon
   String url; // location url for api endpoint
 
-  WorldTime(this.location, this.time, this.flag, this.url);
+  WorldTime(this.location, this.flag, this.url);
 
   // Fetch data from the 3rd party API
-  void getTime() async{
+  Future<void> getTime() async{
     Response response = await get(Uri.parse('http://worldtimeapi.org/api/timezone/$url'));
     Map data = jsonDecode(response.body);
 
