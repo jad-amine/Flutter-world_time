@@ -10,12 +10,6 @@ class ChooseLocation extends StatefulWidget {
 class _ChooseLocationState extends State<ChooseLocation> {
 
   @override
-  void initState() {
-    super.initState();
-    print('init state run');
-  }
-
-  @override
   Widget build(BuildContext context) {
     print('build run');
     return Scaffold(
