@@ -12,6 +12,7 @@ class WorldTime{
 
   // Fetch data from the 3rd party API
   Future<void> getTime() async{
+    try{
     Response response = await get(Uri.parse('http://worldtimeapi.org/api/timezone/$url'));
     Map data = jsonDecode(response.body);
 
@@ -24,5 +25,9 @@ class WorldTime{
     now = now.add(Duration(hours: int.parse(offset)));
     // set the time property
     time = now.toString();
+    } catch (e) {
+      print(e);
+      time = "could not get time data";
+    }
   }
 }
