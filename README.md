@@ -2,6 +2,17 @@
 
 A new Flutter project.
 
+<h2>Screenshot from the actual app</h2>
+
+| Day time                                                         | Night Time                                                     | Locations                                                         |
+| ------------------------------------------------------------------ | --------------------------------------------------------------- | -------------------------------------------------------------------- |
+| <img src="screenshots/day.png" width="250" height="500" /> | <img src="screenshots/night.png" width="250" height="500" /> | <img src="screenshots/locations.png" width="250" height="500" /> |
+
+| Loading screen                                                        | Changing location                                            |
+| ------------------------------------------------------------------ | --------------------------------------------------------------- |
+| <img src="screenshots/loading.gif" width="250" height="500" /> | <img src="screenshots/routing.gif" width="250" height="500" />      |
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
